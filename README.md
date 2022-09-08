@@ -2,5 +2,5 @@
 
 **Demo: [https://palypython-demo.roar123.repl.co](https://palypython-demo.roar123.repl.co)**
 
-![](demo)
+![demo](https://raw.githubusercontent.com/rohanphanse/rplace-2.0/main/images/demo.png)
 
