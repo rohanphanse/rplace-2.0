@@ -208,7 +208,12 @@ class Game {
         const y = Math.round((position.y - this.blockSize / 2) / this.blockSize) * this.blockSize
         const y_index = y / this.blockSize
         const x_index = x / this.blockSize
-        const element = this.grid[y_index][x_index] || null
+        let element;
+        try {
+            element = this.grid[y_index][x_index] || null
+        } catch (error) {
+            element = null
+        }
         if (element !== null && x >= 0 && x <= this.width - element.size && y >= 0 && y <= this.height - element.size) {
             const block = this.grid[y_index][x_index]
             block.remove()
