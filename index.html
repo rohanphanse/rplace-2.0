@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Paly Python Demo</title>
+	<link href="/css/game.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="/js/elements.js"></script>
+    <script src="/js/game.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class = "center">
+        <h1 class = "title">r/place 2.0 - presented by Paly Python Club!</h1>
+        <div class = "instructions">Welcome to the Paly Python Club, enjoy our demo! Choose your region (1-50), color pixels, and move Paly Python logo with WASD.</div>
+        <div class = "inputs">
+            <div class = "input">
+                Region: 
+                <input maxlength = "3" id = "region-input" />
+            </div>
+            <div class = "input">
+                Color: 
+                <input type = "color" id = "color-picker" />
+            </div>
+            <button id = "save-button" class = "input">
+                Save
+            </button>
+        </div>
+	    <div id = "stage">
+            <div id = "region-outline"></div>
+        </div>
+    </div>
+</body>
+
+</html>
